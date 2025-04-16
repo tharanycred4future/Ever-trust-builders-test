@@ -19,7 +19,7 @@ const Header = () => {
       <p 
       data-aos="fade-up"
       data-aos-delay="200"
-       className='absolute  text-white text-lg w-[50%] left-[200px] top-[280px]'>Mr. Construction and Sons is the most successful construction company in St Louis, Missouri, enjoying a solid reputation as one of the trusted commercial & residential construction companies. We take pride in an excellent history of delivering over 100 projects with reliable and high-quality craftsmanship year-round. Our commitment to excellence is the reason behind our full range of services from design to construction so that every project will be done on time, within budget, and of the highest quality.</p>
+       className='absolute  text-white text-lg w-[50%] left-[200px] top-[280px]'>Ever Trust Builders is the most successful construction company in St Louis, Missouri, enjoying a solid reputation as one of the trusted commercial & residential construction companies. We take pride in an excellent history of delivering over 100 projects with reliable and high-quality craftsmanship year-round. Our commitment to excellence is the reason behind our full range of services from design to construction so that every project will be done on time, within budget, and of the highest quality.</p>
     </div>
     </div>
   );
