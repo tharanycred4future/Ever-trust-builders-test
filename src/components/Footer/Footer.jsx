@@ -1,3 +1,7 @@
+import {Link} from "react-router-dom";
+
+
+
 export default function Footer() {
   return (
     <footer
@@ -12,14 +16,14 @@ export default function Footer() {
         <div className="space-y-3 text-sm">
           <h2 className="text-2xl md:text-3xl font-semibold mb-2">Contact Us</h2>
           <p className="mt-6">Ever Trust Builders</p>
-          <p className="mt-2">123 Dream Avenue, Hyderabad, India</p>
+          <p className="mt-2">Chesterfield,Missouri</p>
           <p className="mt-2">
             Email:{" "}
             <a href="mailto:info@evertrust.com" className="underline">
-              info@evertrust.com
+            contactus@etbuilders.com
             </a>
           </p>
-          <p className="mt-2">Phone: +91 98765 43210</p>
+          <p className="mt-2">Phone: +1 618-616-4671</p>
         </div>
 
         {/* Center - Logo */}
@@ -43,14 +47,15 @@ export default function Footer() {
             </a>
           </p>
           <p className="mt-2">
-            <a href="#" className="hover:underline">
+            
+            <Link className="hover:underline" to='/terms-and-conditions'>
               Terms & Conditions
-            </a>
+            </Link>
           </p>
           <p className="mt-2">
-            <a href="#" className="hover:underline">
+            <Link className="hover:underline" to='/privacy-policy'>
               Privacy Policy
-            </a>
+            </Link>
           </p>
         </div>
       </div>

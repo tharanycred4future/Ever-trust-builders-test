@@ -4,7 +4,7 @@ import {
   InstagramIcon,
   LinkedinIcon,
 } from "lucide-react";
-
+import { Link } from "react-router-dom";
 export default function NavBar() {
   return (
     <nav
@@ -13,21 +13,21 @@ export default function NavBar() {
     >
       {/* Top Section (Left side links on desktop) */}
       <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6 items-center">
-        <a href="#" className="text-gray-100 hover:text-blue-400 font-medium">
+       <Link className="text-gray-100 hover:text-blue-400 font-medium" to='/'>
           Home
-        </a>
-        <a href="#" className="text-gray-100 hover:text-blue-400 font-medium">
+        </Link> 
+       <Link className="text-gray-100 hover:text-blue-400 font-medium" to='/about'>
           About
-        </a>
-        <a href="#" className="text-gray-100 hover:text-blue-400 font-medium">
+        </Link>
+        <Link className="text-gray-100 hover:text-blue-400 font-medium" to='/services'>
           Services
-        </a>
+        </Link>
         <a href="#" className="text-gray-100 hover:text-blue-400 font-medium">
           Design Gallery
         </a>
-        <a href="#" className="text-gray-100 hover:text-blue-400 font-medium">
+        <Link className="text-gray-100 hover:text-blue-400 font-medium" to='/contact'>
           Contact Us
-        </a>
+       </Link>
       </div>
 
       {/* Center logo */}
