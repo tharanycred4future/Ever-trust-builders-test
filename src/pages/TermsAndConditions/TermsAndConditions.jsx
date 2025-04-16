@@ -4,10 +4,10 @@ const TermsAndConditions = () => {
   return (
     <div className=' container mx-auto px-4 sm:px-10 md:px-16 lg:pl-[200px] lg:pr-[150px] py-[200px] w-full max-w-[96%]'>
       <h1 className='font-bold text-2xl md:text-3xl text-gray-600'>Terms and Conditions </h1>
-      <h4 className='pt-3 text-lg' ><span className='font-bold'>Effective Date:</span> 03/19/2025 </h4>
-      <h5 className='pt-3 text-lg'><span className='font-bold'>Last Updated:</span> 03/20/2025</h5>
+      <h4 className='pt-3 text-lg' ><span className='font-bold'>Effective Date:</span> 04/16/2025 </h4>
+      <h5 className='pt-3 text-lg'><span className='font-bold'>Last Updated:</span> 04/16/2025</h5>
       <ol className="list-decimal pt-10 pl-5">
-        <li className='pt-2 text-base md:text-lg'><span className='font-bold'>Acceptance of Terms </span>By accessing and using Ever Trust Builders ("www.K7MarketingGroup.com"), you agree to comply with and be bound by these Terms and Conditions. If you do not agree with these terms, please do not use the Website.</li>
+        <li className='pt-2 text-base md:text-lg'><span className='font-bold'>Acceptance of Terms </span>By accessing and using Ever Trust Builders ("www.contactus@etbuilders.com"), you agree to comply with and be bound by these Terms and Conditions. If you do not agree with these terms, please do not use the Website.</li>
         <li className='pt-2 text-base md:text-lg'><span className='font-bold'>Services Provided </span>Ever Trust Builders offers SEO and marketing services, including but not limited to search engine optimization, content marketing, social media management, and analytics. Detailed descriptions of services can be found on the Website.</li>
         <li className='pt-2 text-base md:text-lg'><span className='font-bold'>Eligibility</span>Users must be at least 18 years old to use the Website and our services.</li>
         <li className='pt-2 text-base md:text-lg'><span className='font-bold'>Intellectual Property </span>All content on the Website, including text, graphics, logos, and software, is the property of ProjectK or its content suppliers and is protected by copyright, trademark, and other intellectual property laws.</li>
