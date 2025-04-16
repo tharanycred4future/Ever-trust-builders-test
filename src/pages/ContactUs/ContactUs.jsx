@@ -16,9 +16,9 @@ const ContactUs = () => {
     <>
     <div className='flex items-center justify-center'>
     <div
-  className="relative bg-cover bg-center h-[50vw] w-full rounded-lg"
+  className="relative bg-cover bg-center h-[25vw] w-full rounded-lg"
   style={{
-    backgroundImage: "linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('/contact-header-img.jpg')"
+    backgroundImage: " url('/home-header.jpg')"
   }}
 ></div>
     </div>
@@ -39,28 +39,28 @@ const ContactUs = () => {
           <h3 className="text-2xl font-semibold mb-6">Contact Info</h3>
           <div className="space-y-5">
             <div className="flex items-center gap-4">
-              <span className="text-orange-500 text-xl"><FaPhone /></span>
+              <span className="text-[#0093af] text-xl"><FaPhone /></span>
               <div>
                 <p className="font-semibold text-xl">Call Us</p>
                 <p>+1 618-616-4671</p>
               </div>
             </div>
             <div className="flex items-center gap-4">
-              <span className="text-orange-500 text-xl"><FaEnvelope /></span>
+              <span className="text-[#0093af] text-xl"><FaEnvelope /></span>
               <div>
                 <p className="font-semibold text-xl">Our Email</p>
                 <p>contactus@etbuilders.com</p>
               </div>
             </div>
             <div className="flex items-center gap-4">
-              <span className="text-orange-500 text-xl"><FaMapMarkerAlt /></span>
+              <span className="text-[#0093af] text-xl"><FaMapMarkerAlt /></span>
               <div>
                 <p className="font-semibold text-xl">Our Location</p>
                 <p>Chesterfield,Missouri</p>
               </div>
             </div>
             <div className="flex items-center gap-4">
-              <span className="text-orange-500 text-xl"><FaClock /></span>
+              <span className="text-[#0093af] text-xl"><FaClock /></span>
               <div>
                 <p className="font-semibold text-xl">Working Hours</p>
                 <p>Mon–Fri: 9 AM–6 PM<br />Sat: 10 AM–5 PM</p>
@@ -71,9 +71,9 @@ const ContactUs = () => {
           <div className="mt-14 ml-8">
             <p className="font-semibold mb-3 text-xl">Follow Us</p>
             <div className="flex gap-3 ">
-            <a href="#"><FaWhatsapp className="text-black bg-white rounded-full p-1 text-3xl hover:text-orange-500 " /></a>
-              <a href="#"><FaFacebookF className="text-black bg-white rounded-full p-1 text-3xl hover:text-orange-500" /></a>
-              <a href="#"><FaInstagram className="text-black bg-white rounded-full p-1 text-3xl hover:text-orange-500" /></a>
+            <a href="#"><FaWhatsapp className="text-black bg-white rounded-full p-1 text-3xl hover:text-[#0093af] " /></a>
+              <a href="#"><FaFacebookF className="text-black bg-white rounded-full p-1 text-3xl hover:text-[#0093af]" /></a>
+              <a href="#"><FaInstagram className="text-black bg-white rounded-full p-1 text-3xl hover:text-[#0093af]" /></a>
               
             </div>
           </div>
@@ -91,7 +91,7 @@ const ContactUs = () => {
             <input type="text" placeholder="Phone " className="w-full p-2 border rounded" />
             <input type="text" placeholder="Subject" className="w-full p-2 border rounded" />
             <textarea rows="5" placeholder="Message" className="w-full p-2 border rounded" />
-            <button type="submit" className="bg-orange-500 text-white px-6 py-2 rounded hover:bg-orange-600 font-semibold">
+            <button type="submit" className="bg-[#0093af] text-white px-6 py-2 rounded hover:bg-[#0072bb] font-semibold cursor-pointer">
               Send Message
             </button>
           </form>

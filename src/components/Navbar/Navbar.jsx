@@ -1,9 +1,4 @@
-import {
-  FacebookIcon,
-  TwitterIcon,
-  InstagramIcon,
-  LinkedinIcon,
-} from "lucide-react";
+import { FaFacebookF, FaInstagram, FaWhatsapp } from 'react-icons/fa';
 import { Link } from "react-router-dom";
 export default function NavBar() {
   return (
@@ -12,7 +7,7 @@ export default function NavBar() {
       style={{ backgroundImage: "url('/navbar-bg.jpg')" }}
     >
       {/* Top Section (Left side links on desktop) */}
-      <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6 items-center">
+      <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6 items-center ">
        <Link className="text-gray-100 hover:text-blue-400 font-medium" to='/'>
           Home
         </Link> 
@@ -36,20 +31,19 @@ export default function NavBar() {
       </div>
 
       {/* Right side social icons */}
-      <div className="flex space-x-4 justify-center md:justify-end text-white">
-        <a href="#" className="hover:text-blue-500">
-          <FacebookIcon size={20} />
-        </a>
-        <a href="#" className="hover:text-blue-300">
-          <TwitterIcon size={20} />
-        </a>
-        <a href="#" className="hover:text-pink-400">
-          <InstagramIcon size={20} />
-        </a>
-        <a href="#" className="hover:text-blue-600">
-          <LinkedinIcon size={20} />
-        </a>
-      </div>
+      <div className="flex space-x-4 justify-center md:justify-end text-white ">
+  <a href="#" className="hover:text-blue-500">
+    <FaFacebookF size={20} />
+  </a>
+
+  <a href="#" className="hover:text-pink-400">
+    <FaInstagram size={20} />
+  </a>
+
+  <a href="#" className="hover:text-green-400">
+    <FaWhatsapp size={20} />
+  </a>
+</div>
     </nav>
   );
 }

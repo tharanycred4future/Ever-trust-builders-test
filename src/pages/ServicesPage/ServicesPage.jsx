@@ -90,19 +90,26 @@ const ServicesPage = () => {
         <section className="px-4 py-10 sm:px-6 lg:px-16 text-black">
   <div className="max-w-7xl mx-auto">
     <div className="flex flex-col space-y-4">
-      <h1 className="font-bold text-4xl">Our Seasonal Comprehensive Services</h1>
-      <hr className="w-[30px] border-2 border-amber-500" />
+    <div className="mb-6">
+  <h2 className="text-2xl sm:text-3xl font-bold text-gray-800">
+     Our Seasonal Services
+  </h2>
+  <div className="mt-2 h-1 w-24 bg-[#0093af] rounded"></div> {/* Adjust width here */}
+</div>
       <p className="text-xl text-gray-950">
       At Mr. Construction and Sons, we understand that the needs for your property change with every season, and we offer tailored solutions for winter as well as summer to ensure your home or business is always well-kept throughout the year. Here are our specialized services:
       </p>
     </div>
   </div>
 </section>
-        <section className="py-10 px-4 sm:px-6 lg:px-16 bg-white">
+        <section className="py-5 px-4 sm:px-6 lg:px-16 bg-white">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-2">
-          <span className="text-orange-500 border-b-5 border-orange-500 mr-2">1.</span> Summer Services
-        </h2>
+      <div className="mb-6">
+  <h2 className="text-2xl sm:text-3xl font-bold text-gray-800">
+    <span className="text-black mr-2">1.</span> Summer Services
+  </h2>
+  <div className="mt-2 h-1 w-24 bg-[#0093af] rounded"></div> {/* Adjust width here */}
+</div>
         <p className="text-gray-600 mb-10 max-w-4xl">
           By summer, it demands maintenance and improvement of property appearance and usability. Our summer services will make your property look its best while overcoming the particular challenges of the hot season:
         </p>
@@ -129,9 +136,12 @@ const ServicesPage = () => {
 
     <section className="py-10 px-4 sm:px-6 lg:px-16 bg-white">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-2">
-          <span className="text-orange-500 border-b-5 border-orange-500 mr-2">2. </span> Winter Services
+      <div className="mb-6">
+        <h2 className="text-2xl sm:text-3xl font-bold text-gray-800">
+           <span className="text-black mr-2">2.</span> WinterServices
         </h2>
+          <div className="mt-2 h-1 w-24 bg-[#0093af] rounded"></div> {/* Adjust width here */}
+        </div>
         <p className="text-gray-600 mb-10 max-w-4xl">
         Your property, of course, deserves special care during the colder months to stand up well against the harsh winter weather. We offer winter services designed to protect your property as well as enhance it:
         </p>
