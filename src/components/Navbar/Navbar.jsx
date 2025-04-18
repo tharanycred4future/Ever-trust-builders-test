@@ -27,7 +27,7 @@ export default function NavBar() {
 
       {/* Center logo */}
       <div className="text-2xl font-bold text-white text-center">
-      <img src="/logo.png" alt="Ever Trust Builders Logo" className="w-30 h-auto" />
+      <img src="/logo1.png" alt="Ever Trust Builders Logo" className="w-30 h-auto" />
       </div>
 
       {/* Right side social icons */}
