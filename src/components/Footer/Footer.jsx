@@ -29,7 +29,7 @@ export default function Footer() {
         {/* Center - Logo */}
         <div className="flex flex-col items-center justify-start md:items-center md:justify-center ">
           <h2 className="text-2xl font-bold hover:text-[#0093af] cursor-pointer">Ever Trust Builders</h2>
-          <img src="/logo-dummy.png" alt="Ever Trust Builders Logo" className="w-50 h-auto" />
+          <img src="/logo1.png" alt="Ever Trust Builders Logo" className="w-50 h-auto" />
           </div>
 
         {/* Right Side - Useful Links */}

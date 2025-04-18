@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 export default function NavBar() {
   return (
     <nav
-      className="flex flex-col md:flex-row items-center justify-between px-6 py-6 md:py-8 bg-cover bg-center shadow-md text-white space-y-6 md:space-y-0"
+      className="flex flex-col md:flex-row items-center justify-between px-6  md:py-2 bg-cover bg-center shadow-md text-white space-y-6 md:space-y-0"
       style={{ backgroundImage: "url('/navbar-bg.jpg')" }}
     >
       {/* Top Section (Left side links on desktop) */}
@@ -27,7 +27,7 @@ export default function NavBar() {
 
       {/* Center logo */}
       <div className="text-2xl font-bold text-white text-center">
-        Ever Trust Builders
+      <img src="/logo.png" alt="Ever Trust Builders Logo" className="w-30 h-auto" />
       </div>
 
       {/* Right side social icons */}

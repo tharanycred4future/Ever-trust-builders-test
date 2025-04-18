@@ -1,53 +1,136 @@
-import React from 'react'
+import React from "react";
 
 const PrivacyPolicy = () => {
   return (
-    <div className=' container mx-auto px-4 sm:px-10 md:px-16 lg:pl-[200px] lg:pr-[150px] py-[200px]  max-w-[96%]'>
-         <h1 className='font-bold text-2xl md:text-3xl text-gray-600'>Privacy Policy </h1>
-      <h4 className='pt-3 text-lg' ><span className='font-bold'>Effective Date:</span> 04/16/2025 </h4>
-      <h5 className='pt-3 text-lg'><span className='font-bold'>Last Updated:</span> 04/16/2025</h5>
-      <p className='text-base md:text-lg py-4'>Ever Trust Builders ("we," "our," or "us") respects your privacy and is committed to protecting the personal information you share with us. This Privacy Policy explains how we collect, use, and protect your information when you visit our website or use our services.</p>
-      <ol className='list-decimal pt-4 pl-5'>
-        <li className='pt-2 text-base md:text-lg'><span className='font-bold'>Information We Collect</span>
-        <p>We may collect the following types of information:</p>
-        <ul className="list-disc pl-12 ">
-          <li className='pt-3 '><span className='font-bold'>Personal Information: </span>Such as your name, email address, phone number, billing address, and other information you voluntarily provide.</li>
-          <li className='pt-3 '><span className='font-bold'>Non-Personal Information: </span>Such as your IP address, browser type, operating system, and browsing behavior.</li>
-          <li className='pt-3 '><span className='font-bold'>Cookies:</span>Information collected through cookies and similar technologies. For more details, please refer to our Cookie Policy.</li>
-            </ul></li>
-        <li className='pt-2 text-base md:text-lg'><span className='font-bold'>How We Use Your Information</span>
-        <p>We use the information we collect for the following purposes:</p>
-        <ul className="list-disc pl-12 ">
-            <li className='pt-3 '>To provide and improve our services</li>
-            <li className='pt-3 '>To communicate with you regarding updates, promotions, and offers.</li>
-            <li className='pt-3 '>To analyze website performance and user behavior.</li>
-            <li className='pt-3 '>To comply with legal obligations.</li></ul></li>
-        <li className='pt-2 text-base md:text-lg'><span className='font-bold'>Sharing Your Information</span>
-        <p>We may share your information with:</p>
-        <ul  className="list-disc pl-12 ">
-            <li className='pt-3 '><span className='font-bold'>Service Providers: </span>Third parties who assist us in delivering our services (e.g., payment processors, analytics providers).</li>
-            <li className='pt-3 '><span className='font-bold'>Legal Requirements: </span>When required by law or to protect our legal rights.</li>
-            <li className='pt-3 '><span className='font-bold'>Business Transfers: </span>In case of a merger, acquisition, or sale of assets.</li>
-        </ul></li>
-        <li className='pt-2 text-base md:text-lg'><span className='font-bold'>Your Privacy Rights</span>
-        <p>Depending on your location, you may have the following rights:</p>
-        <ul className="list-disc pl-12 ">
-            <li className='pt-3 '>The right to access, update, or delete your personal information.</li>
-            <li className='pt-3 '>The right to opt out of the sale of your personal information (if applicable).</li>
-            <li className='pt-3 '>The right to limit the use of your sensitive personal information.</li></ul>
-            <p>If you are a resident of California, Virginia, or any other state with privacy regulations, please refer to our [Privacy Rights Addendum] for more details.</p></li>
-        <li className='pt-2 text-base md:text-lg'><span className='font-bold'>Data Security</span>We implement reasonable technical, administrative, and physical safeguards to protect your information. However, no method of transmission over the internet is completely secure, and we cannot guarantee absolute security.</li>
-        <li className='pt-2 text-base md:text-lg'><span className='font-bold'>Data Retention</span>We retain your personal information only as long as necessary to fulfill the purposes for which it was collected or to comply with legal obligations</li>
-        <li className='pt-2 text-base md:text-lg'><span className='font-bold'>Third-Party Links</span>Our website may contain links to third-party websites. We are not responsible for the privacy practices or content of these websites.</li>
-        <li className='pt-2 text-base md:text-lg'><span className='font-bold'>Children's Privacy</span>Our website is not intended for children under the age of 13. We do not knowingly collect personal information from children.</li>
-        <li className='pt-2 text-base md:text-lg'><span className='font-bold'>Changes to This Policy</span>We may update this Privacy Policy from time to time. Any changes will be posted on this page, and the "Last Updated" date will be revised.</li>
-        <li className='pt-2 text-base md:text-lg'><span className='font-bold'>Contact Us</span>
-        <p>If you have any questions about this Privacy Policy, </p>
-        <p>please contact us at:<span className='text-gray-600'>contactus@etbuilders.com</span> </p></li>
-      </ol>
-      
-    </div>
-  )
-}
+    <div className="max-w-4xl mx-auto px-4 py-10 text-gray-800">
+      <h1 className="text-3xl font-bold mb-4">Privacy Policy</h1>
+      <p className="text-sm text-gray-500 mb-8">Effective Date: 04/30/2025</p>
 
-export default PrivacyPolicy
+      <p className="mb-6">
+        At Evertrust Builders, we value your privacy and are committed to
+        protecting your personal information. This Privacy Policy explains how
+        we collect, use, and safeguard your information when you visit our
+        website.
+      </p>
+
+      <Section title="1. Information We Collect">
+        <ul className="list-disc pl-6 space-y-2">
+          <li>
+            <strong>Personal Information:</strong> Such as your name, email
+            address, phone number, and any other details you provide via our
+            contact forms or service inquiries.
+          </li>
+          <li>
+            <strong>Non-Personal Information:</strong> Such as your IP address,
+            browser type, and browsing activity, automatically collected through
+            cookies or other tracking technologies.
+          </li>
+        </ul>
+      </Section>
+
+      <Section title="2. How We Use Your Information">
+        <ul className="list-disc pl-6 space-y-2">
+          <li>Responding to your inquiries and providing our services.</li>
+          <li>
+            Communicating about project updates, promotions, or company news.
+          </li>
+          <li>Improving our website and customer experience.</li>
+          <li>Ensuring compliance with legal requirements.</li>
+        </ul>
+      </Section>
+
+      <Section title="3. Sharing Your Information">
+        <p className="mb-2">
+          We do not sell your personal information. However, we may share your
+          information with:
+        </p>
+        <ul className="list-disc pl-6 space-y-2">
+          <li>
+            <strong>Service Providers and Contractors:</strong> To facilitate
+            our construction projects and services.
+          </li>
+          <li>
+            <strong>Legal Authorities:</strong> When required by law or to
+            protect our rights and property.
+          </li>
+        </ul>
+      </Section>
+
+      <Section title="4. Cookies and Tracking Technologies">
+        <p className="mb-2">
+          Our website uses cookies to enhance your browsing experience by:
+        </p>
+        <ul className="list-disc pl-6 space-y-2">
+          <li>Remembering your preferences and settings.</li>
+          <li>Analyzing website traffic and visitor behavior.</li>
+        </ul>
+        <p className="mt-2">
+          You can manage cookie settings through your browser; however,
+          disabling cookies may affect certain features on our website.
+        </p>
+      </Section>
+
+      <Section title="5. Data Security">
+        <p>
+          We take appropriate measures to protect your information from
+          unauthorized access, alteration, or disclosure. However, no method of
+          online transmission is entirely secure, so we cannot guarantee
+          complete security.
+        </p>
+      </Section>
+
+      <Section title="6. Your Rights">
+        <ul className="list-disc pl-6 space-y-2">
+          <li>Access, update, or delete your personal information.</li>
+          <li>
+            Opt-out of marketing communications via the “unsubscribe” link in
+            our emails.
+          </li>
+          <li>Request details of the information we hold about you.</li>
+        </ul>
+        <p className="mt-2">
+          To exercise these rights, please contact us at{" "}
+          <a href="mailto:team@evertrustbuilders.com" className="text-blue-600 underline">
+            team@evertrustbuilders.com
+          </a>
+          .
+        </p>
+      </Section>
+
+      <Section title="7. Third-Party Links">
+        <p>
+          Our website may contain links to third-party websites. We are not
+          responsible for their privacy practices or content. Please review
+          their policies before engaging with them.
+        </p>
+      </Section>
+
+      <Section title="8. Updates to This Privacy Policy">
+        <p>
+          We reserve the right to update this Privacy Policy as needed. Changes
+          will be posted on this page with an updated effective date.
+        </p>
+      </Section>
+
+      <Section title="9. Contact Us">
+        <p>
+          If you have any questions or concerns about this Privacy Policy,
+          please contact us at{" "}
+          <a href="mailto:team@evertrustbuilders.com" className="text-blue-600 underline">
+            team@evertrustbuilders.com
+          </a>
+          .
+        </p>
+      </Section>
+    </div>
+  );
+};
+
+const Section = ({ title, children }) => (
+  <section className="mb-8">
+    <h2 className="text-xl font-semibold mb-2">{title}</h2>
+    <div className="text-gray-700 text-sm">{children}</div>
+  </section>
+);
+
+export default PrivacyPolicy;

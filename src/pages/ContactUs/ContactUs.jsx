@@ -14,14 +14,7 @@ import { FaXTwitter } from 'react-icons/fa6';
 const ContactUs = () => {
   return (
     <>
-    <div className='flex items-center justify-center'>
-    <div
-  className="relative bg-cover bg-center h-[25vw] w-full rounded-lg"
-  style={{
-    backgroundImage: " url('/home-header.jpg')"
-  }}
-></div>
-    </div>
+  
 
 
     <section className="bg-white py-16 px-4 md:px-16 relative">
