@@ -84,17 +84,17 @@ const summerServices = [
 
 const ServicesPage = () => {
   return (
-    <div >
-      <div className="relative bg-[url('/header-img.jpg')] bg-cover bg-center h-[20vw] w-[100%] rounded-lg">
+    <div className='pt-62 md:pt-20' >
+      <div className="relative bg-[url('/header-img.jpg')] bg-cover bg-center h-[60vw] w-[100%] rounded-lg">
         </div>
         <section className="px-4 py-10 sm:px-6 lg:px-16 text-black">
   <div className="max-w-7xl mx-auto">
     <div className="flex flex-col space-y-4">
     <div className="mb-6">
-  <h2 className="text-2xl sm:text-3xl font-bold text-gray-800">
+  <h2 className="text-2xl sm:text-3xl font-bold text-[#6a2226]">
      Our Seasonal Services
   </h2>
-  <div className="mt-2 h-1 w-24 bg-[#0093af] rounded"></div> {/* Adjust width here */}
+  <div className="mt-2 h-1 w-15 bg-[#848058] rounded"></div> {/* Adjust width here */}
 </div>
       <p className="text-xl text-gray-950">
       At Mr. Construction and Sons, we understand that the needs for your property change with every season, and we offer tailored solutions for winter as well as summer to ensure your home or business is always well-kept throughout the year. Here are our specialized services:
@@ -105,10 +105,10 @@ const ServicesPage = () => {
         <section className="py-5 px-4 sm:px-6 lg:px-16 bg-white">
       <div className="max-w-7xl mx-auto">
       <div className="mb-6">
-  <h2 className="text-2xl sm:text-3xl font-bold text-gray-800">
-    <span className="text-black mr-2">1.</span> Summer Services
+  <h2 className="text-2xl sm:text-3xl font-bold text-[#6a2226]">
+    <span className="text-[#6a2226] mr-2">1.</span> Summer Services
   </h2>
-  <div className="mt-2 h-1 w-24 bg-[#0093af] rounded"></div> {/* Adjust width here */}
+  <div className="mt-2 h-1 w-15 bg-[#848058] rounded"></div> {/* Adjust width here */}
 </div>
         <p className="text-gray-600 mb-10 max-w-4xl">
           By summer, it demands maintenance and improvement of property appearance and usability. Our summer services will make your property look its best while overcoming the particular challenges of the hot season:
@@ -116,7 +116,7 @@ const ServicesPage = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {summerServices.map((service, index) => (
-            <div key={index} className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
+            <div key={index} className="bg-[#E7Dcc9] rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
               <img
                 src={service.image}
                 alt={service.title}
@@ -137,10 +137,10 @@ const ServicesPage = () => {
     <section className="py-10 px-4 sm:px-6 lg:px-16 bg-white">
       <div className="max-w-7xl mx-auto">
       <div className="mb-6">
-        <h2 className="text-2xl sm:text-3xl font-bold text-gray-800">
-           <span className="text-black mr-2">2.</span> WinterServices
+        <h2 className="text-2xl sm:text-3xl font-bold text-[#6a2226]">
+           <span className="text-[#6a2226] mr-2">2.</span> WinterServices
         </h2>
-          <div className="mt-2 h-1 w-24 bg-[#0093af] rounded"></div> {/* Adjust width here */}
+          <div className="mt-2 h-1 w-15 bg-[#848058] rounded"></div> {/* Adjust width here */}
         </div>
         <p className="text-gray-600 mb-10 max-w-4xl">
         Your property, of course, deserves special care during the colder months to stand up well against the harsh winter weather. We offer winter services designed to protect your property as well as enhance it:
@@ -148,7 +148,7 @@ const ServicesPage = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {winterServices.map((service, index) => (
-            <div key={index} className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
+            <div key={index} className="bg-[#E7Dcc9] rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
               <img
                 src={service.image}
                 alt={service.title}

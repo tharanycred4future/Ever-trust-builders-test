@@ -10,6 +10,7 @@ import Home from './pages/Home/Home'
 import About from './pages/About/About'
 import ServicesPage from './pages/ServicesPage/ServicesPage'
 import ContactUs from './pages/ContactUs/ContactUs'
+import DesignGallery from './pages/DesignGallery/DesignGallery'
 import PrivacyPolicy from './pages/PrivacyPolicy/PrivacyPolicy'
 import TermsAndConditions from './pages/TermsAndConditions/TermsAndConditions'
 
@@ -37,6 +38,7 @@ function App() {
       <Route path="/" element={<Home />} />
       <Route path="/about" element={<About/>} />
       <Route path="/services" element={<ServicesPage/>} />
+      <Route path ='/design-gallery' element={<DesignGallery/>}/>
       <Route path='/contact' element={<ContactUs/>}/>
       <Route path='/privacy-policy' element={<PrivacyPolicy/>}/>
       <Route path='terms-and-conditions' element={<TermsAndConditions/>}/>

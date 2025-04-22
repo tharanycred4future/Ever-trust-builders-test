@@ -2,31 +2,28 @@ import React from 'react';
 
 const Header = () => {
   return (
-    <div className="flex items-center justify-center">
+    <div className="flex items-center justify-center pt-45 md:pt-20">
       <div
-        className="relative bg-cover bg-center w-full h-[90vh] md:h-[60vh] rounded-lg px-6 sm:px-10 lg:px-20 py-12 flex flex-col justify-center"
-        style={{
-          backgroundImage:
-            "linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/contact-header-img.jpg')",
-        }}
+        className="relative bg-cover bg-center w-full h-[150vh] md:h-[80vh] rounded-lg px-6 sm:px-10 lg:px-20 py-12 flex flex-col justify-center"
+      
       >
         <h3
           data-aos="fade-up"
-          className="text-[#bcd4e6] text-lg sm:text-lg font-semibold mb-2"
+          className="text-black text-lg sm:text-lg font-semibold mb-2"
         >
           Welcome to Ever Trust Builders
         </h3>
         <h1
           data-aos="fade-up"
           data-aos-delay="100"
-          className="text-[#1dacd6] text-3xl sm:text-3xl md:text-5xl font-extrabold leading-tight mb-4"
+          className="text-black text-3xl sm:text-3xl md:text-5xl font-extrabold leading-tight mb-4"
         >
           Leading Construction Company in St Louis, Missouri
         </h1>
         <p
           data-aos="fade-up"
           data-aos-delay="200"
-          className="text-[#e7feff] text-base sm:text-sm md:text-lg max-w-4xl"
+          className="text-black text-base sm:text-sm md:text-lg max-w-4xl"
         >
           Ever Trust Builders is the most successful construction company in St
           Louis, Missouri, enjoying a solid reputation as one of the trusted
