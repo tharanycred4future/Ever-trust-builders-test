@@ -3,7 +3,7 @@ import './App.css'
 
 import Navbar from './components/Navbar/Navbar'
 import Footer from './components/Footer/Footer'
-
+import BackToTopButton from './components/BackToTopButton/BackToTopButton'
 
 
 import Home from './pages/Home/Home'
@@ -46,6 +46,7 @@ function App() {
     </div>
      
      <Footer/>
+     <BackToTopButton /> 
     </>
   )
 }

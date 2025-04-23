@@ -2,7 +2,7 @@ import React from 'react';
 
 const Header = () => {
   return (
-    <div className="flex items-center justify-center pt-45 md:pt-20">
+    <div className="flex items-center justify-center pt-2 md:pt-20">
       <div
         className="relative bg-cover bg-center w-full h-[150vh] md:h-[80vh] rounded-lg px-6 sm:px-10 lg:px-20 py-12 flex flex-col justify-center"
       

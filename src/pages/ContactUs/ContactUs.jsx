@@ -28,7 +28,7 @@ const ContactUs = () => {
 
         <div className="flex flex-col lg:flex-row gap-8 justify-center items-stretch max-w-7xl mx-auto">
         {/* Contact Info Card - LEFT */}
-        <div className="bg-[#E7Dcc9] shadow-xl p-8 rounded-lg w-full lg:w-1/2">
+        <div className="bg-[#c2b280] shadow-xl p-8 rounded-lg w-full lg:w-1/2">
           <h3 className="text-2xl font-semibold mb-6">Contact Info</h3>
           <div className="space-y-5">
             <div className="flex items-center gap-4">
@@ -73,7 +73,7 @@ const ContactUs = () => {
         </div>
 
         {/* Send Us A Message - RIGHT */}
-        <div className="bg-[#E7Dcc9] shadow-xl p-8 rounded-lg w-full lg:w-1/2 h-full">
+        <div className="bg-[#c2b280] shadow-xl p-8 rounded-lg w-full lg:w-1/2 h-full">
           <h3 className="text-2xl font-semibold mb-6">Send Us A Message</h3>
           <form className="space-y-4">
             <div className="flex gap-4">
