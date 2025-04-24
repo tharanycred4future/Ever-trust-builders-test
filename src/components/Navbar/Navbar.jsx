@@ -21,7 +21,7 @@ export default function NavBar() {
         scrolled ? "py-1 bg-[#A2A68B]" : "py-2 bg-[#c2b280]"
       }`}
     >
-      <div className="flex items-center justify-between px-6 text-white transition-all duration-300">
+      <div className="flex items-center justify-between px-6 text-white transition-all duration-300 ">
         {/* Left Section - Logo */}
         <div className="flex items-center">
           <Link to='/'>
