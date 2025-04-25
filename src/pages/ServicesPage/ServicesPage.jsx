@@ -84,9 +84,29 @@ const summerServices = [
 
 const ServicesPage = () => {
   return (
-    <div className='pt-62 md:pt-20' >
-      <div className="relative bg-[url('/header-img.jpg')] bg-cover bg-center h-[60vw] w-[100%] rounded-lg">
+    <div className='pt-62 md:pt-40' >
+    <div className="relative bg-[url('/header-img.jpg')] bg-cover bg-center h-[100vh]  md:h-[80vh] w-full rounded-lg overflow-hidden">
+        <div className="absolute inset-0 flex items-center justify-center md:justify-start px-4 sm:px-8">
+          <div className="bg-white/80 text-gray-800 rounded-xl shadow-lg w-full sm:w-[90%] md:w-[65%]  p-4 sm:p-6 md:p-8">
+            <h1 className="text-lg sm:text-2xl md:text-3xl font-bold mb-3 text-[#6a2226]">
+              Our Main Construction Services
+            </h1>
+            <h2 className="text-base sm:text-xl md:text-2xl font-semibold text-[#848058] mb-2">
+              Commercial Construction
+            </h2>
+            <p className="text-sm sm:text-base md:text-lg mb-4">
+              With being a highly established commercial construction company, EverTrust is capable to execute intricate commercial projects and design/build services. It could be an office complex, retail space, or an industrial site – we provide expandable and personalized solutions that satisfy business requirements with efficiency and perfection.
+            </p>
+            <h2 className="text-base sm:text-xl md:text-2xl font-semibold text-[#848058] mb-2">
+              Residential Construction
+            </h2>
+            <p className="text-sm sm:text-base md:text-lg">
+              If residential construction companies in St Louis are what you seek, EverTrust is well equipped to provide. Custom home building, remodeling, and additions are just a few of our areas of expertise, and we have home construction services that reflect your personal style using the best materials and skills.
+            </p>
+          </div>
         </div>
+      </div>
+
         <section className="px-4 py-10 sm:px-6 lg:px-16 text-black">
   <div className="max-w-7xl mx-auto">
     <div className="flex flex-col space-y-4">
