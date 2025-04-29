@@ -7,7 +7,7 @@ const TermsAndConditions = () => {
       <h4 className='pt-3 text-lg' ><span className='font-bold'>Effective Date:</span> 04/16/2025 </h4>
       <h5 className='pt-3 text-lg'><span className='font-bold'>Last Updated:</span> 04/16/2025</h5>
       <ol className="list-decimal pt-10 pl-5">
-        <li className='pt-2 text-base md:text-lg'><span className='font-bold'>Acceptance of Terms </span>By accessing and using Ever Trust Builders ("www.contactus@etbuilders.com"), you agree to comply with and be bound by these Terms and Conditions. If you do not agree with these terms, please do not use the Website.</li>
+        <li className='pt-2 text-base md:text-lg'><span className='font-bold'>Acceptance of Terms </span>By accessing and using Ever Trust Builders ("EvertrustBuilders@gmail.com"), you agree to comply with and be bound by these Terms and Conditions. If you do not agree with these terms, please do not use the Website.</li>
         <li className='pt-2 text-base md:text-lg'><span className='font-bold'>Services Provided </span>Ever Trust Builders offers SEO and marketing services, including but not limited to search engine optimization, content marketing, social media management, and analytics. Detailed descriptions of services can be found on the Website.</li>
         <li className='pt-2 text-base md:text-lg'><span className='font-bold'>Eligibility</span>Users must be at least 18 years old to use the Website and our services.</li>
         <li className='pt-2 text-base md:text-lg'><span className='font-bold'>Intellectual Property </span>All content on the Website, including text, graphics, logos, and software, is the property of ProjectK or its content suppliers and is protected by copyright, trademark, and other intellectual property laws.</li>
@@ -19,7 +19,7 @@ const TermsAndConditions = () => {
         <li className='pt-2 text-base md:text-lg'><span className='font-bold'>Changes to Terms </span>ProjectK reserves the right to update these Terms and Conditions at any time. Updates will be posted on the Website, and it is the user's responsibility to review them periodically.</li>
         <li className='pt-2 text-base md:text-lg'><span className='font-bold'>Contact Information </span>For questions about these Terms and Conditions, </li>
       </ol>
-       <p className='text-base md:text-lg pt-3'>please contact us at:contactus@etbuilders.com</p>
+       <p className='text-base md:text-lg pt-3'>please contact us at:EvertrustBuilders@gmail.com</p>
     </div>
   )
 }

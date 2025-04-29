@@ -9,7 +9,7 @@ const About = () => {
         <div
     className="absolute inset-0 w-full h-full rounded-b-2xl shadow-lg"
     style={{
-      backgroundImage: "linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.3)), url('/img_2.jpeg')",
+      backgroundImage: "linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.3)), url('/about-header-img.jpeg')",
       backgroundSize: "cover",
       backgroundPosition: "center",
       backgroundRepeat: "no-repeat",

@@ -90,8 +90,8 @@ const PrivacyPolicy = () => {
         </ul>
         <p className="mt-2">
           To exercise these rights, please contact us at{" "}
-          <a href="mailto:team@evertrustbuilders.com" className="text-blue-600 underline">
-            team@evertrustbuilders.com
+          <a href="mailto:EvertrustBuilders@gmail.com" className="text-blue-600 underline">
+          EvertrustBuilders@gmail.com
           </a>
           .
         </p>
@@ -116,8 +116,8 @@ const PrivacyPolicy = () => {
         <p>
           If you have any questions or concerns about this Privacy Policy,
           please contact us at{" "}
-          <a href="mailto:team@evertrustbuilders.com" className="text-blue-600 underline">
-            team@evertrustbuilders.com
+          <a href="mailto:EvertrustBuilders@gmail.com" className="text-blue-600 underline">
+          EvertrustBuilders@gmail.com
           </a>
           .
         </p>

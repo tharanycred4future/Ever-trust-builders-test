@@ -42,14 +42,14 @@ const ContactUs = () => {
               <span className="text-[#6a2226] text-xl"><FaEnvelope /></span>
               <div>
                 <p className="font-semibold text-xl">Our Email</p>
-                <p>contactus@etbuilders.com</p>
+                <p>EvertrustBuilders@gmail.com</p>
               </div>
             </div>
             <div className="flex items-center gap-4">
               <span className="text-[#6a2226] text-xl"><FaMapMarkerAlt /></span>
               <div>
                 <p className="font-semibold text-xl">Our Location</p>
-                <p>Chesterfield,Missouri</p>
+                <p>920 Forestlac Ct, Saint Louis, Missouri, 63141.</p>
               </div>
             </div>
             <div className="flex items-center gap-4">

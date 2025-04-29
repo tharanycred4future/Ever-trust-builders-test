@@ -7,7 +7,7 @@ export default function Footer() {
         
         {/* Column 1 - Logo & Brand */}
         <div className="flex flex-col items-center md:items-start  ">
-          <img src="/logo1.png" alt="Ever Trust Builders Logo" className="w-40 h-auto" />
+         <Link to='/'> <img src="/logo1.png" alt="Ever Trust Builders Logo" className="w-40 h-auto" /></Link>
           <h2 className="text-2xl font-bold text-[#4D4725] hover:text-[#6a2226] cursor-pointer">
             {/* Add brand name here if needed */}
           </h2>
@@ -18,7 +18,7 @@ export default function Footer() {
           <h2 className="text-2xl md:text-3xl font-semibold mb-2 hover:text-[#6a2226] cursor-pointer">
             Useful Links
           </h2>
-          <p className="mt-6"><a href="#" className="hover:underline">Home</a></p>
+          <Link to='/' className="mt-6 hover:underline">Home</Link>
           <p className="mt-2"><a href="#" className="hover:underline">Blogs</a></p>
           <p className="mt-2">
             <Link to='/terms-and-conditions' className="hover:underline">Terms & Conditions</Link>
@@ -34,9 +34,9 @@ export default function Footer() {
             Contact Us
           </h2>
           <p className="mt-6">Ever Trust Builders</p>
-          <p className="mt-2">Chesterfield, Missouri</p>
+          <p className="mt-2">920 Forestlac Ct, Saint Louis, Missouri, 63141.</p>
           <p className="mt-2">
-            Email: <a href="mailto:contactus@etbuilders.com" className="underline">contactus@etbuilders.com</a>
+            Email: <a href="mailto:EvertrustBuilders@gmail.com" className="underline">EvertrustBuilders@gmail.com</a>
           </p>
           <p className="mt-2">Phone: +1 618-616-4671</p>
         </div>

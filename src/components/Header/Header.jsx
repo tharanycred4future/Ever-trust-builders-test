@@ -8,7 +8,7 @@ const Header = () => {
         <section className="relative w-full min-h-[80vh] text-white">
           {/* Background Image */}
           <img
-            src="/img_2.jpeg"
+            src="/home-header-img.jpeg"
             alt="about page bg image"
             className="absolute inset-0 w-full h-full object-cover rounded-b-2xl shadow-lg"
           />
