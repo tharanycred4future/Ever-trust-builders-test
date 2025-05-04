@@ -21,6 +21,8 @@ export default function Footer() {
           <Link to='/' className="mt-6 hover:underline">Home</Link>
           <p className="mt-2"><a href="#" className="hover:underline">Blogs</a></p>
           <p className="mt-2">
+            <Link to='/recent-construction-works' className="hover:underline">Our Construction Works</Link></p>
+          <p className="mt-2">
             <Link to='/terms-and-conditions' className="hover:underline">Terms & Conditions</Link>
           </p>
           <p className="mt-2">

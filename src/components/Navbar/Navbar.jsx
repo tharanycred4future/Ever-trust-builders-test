@@ -26,7 +26,7 @@ export default function NavBar() {
         <div className="flex items-center">
           <Link to='/'>
             <img
-              src="/logo1.png"
+              src="/logo-n-1.png"
               alt="Ever Trust Builders Logo"
               className={`transition-all duration-300 ${
                 scrolled ? "w-24" : "w-36"
@@ -48,6 +48,7 @@ export default function NavBar() {
           <Link className="text-[#4D4725] hover:text-blue-400 text-lg" to='/about'>About</Link>
           <Link className="text-[#4D4725] hover:text-blue-400 text-lg" to='/services'>Services</Link>
           <Link className="text-[#4D4725] hover:text-blue-400 text-lg" to='design-gallery'>Design Gallery</Link>
+          <Link className="text-[#4D4725] hover:text-blue-400 text-lg" to='/blogs'>Blogs</Link>
           <Link className="text-[#4D4725] hover:text-blue-400 text-lg" to='/contact'>Contact Us</Link>
         </div>
 
@@ -55,7 +56,7 @@ export default function NavBar() {
         <div className="hidden md:flex space-x-4 text-white">
           <a href="#" className="hover:text-blue-500 text-[#4D4725] text-xl "><FaFacebookF size={20} /></a>
           <a href="#" className="hover:text-pink-400 text-[#4D4725] text-xl "><FaInstagram size={20} /></a>
-          <a href="#" className="hover:text-green-400 text-[#4D4725] text-xl "><FaWhatsapp size={20} /></a>
+          <a href="https://wa.me/16186164671" target="_blank" rel="noopener noreferrer" className="hover:text-green-400 text-[#4D4725] text-xl "><FaWhatsapp size={20} /></a>
         </div>
       </div>
 

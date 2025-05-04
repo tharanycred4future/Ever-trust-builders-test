@@ -13,6 +13,7 @@ import ContactUs from './pages/ContactUs/ContactUs'
 import DesignGallery from './pages/DesignGallery/DesignGallery'
 import PrivacyPolicy from './pages/PrivacyPolicy/PrivacyPolicy'
 import TermsAndConditions from './pages/TermsAndConditions/TermsAndConditions'
+import RecentConstructionWorks from './pages/RecentConstructionWorks/RecentConstructionWorks'
 
 
 
@@ -42,6 +43,7 @@ function App() {
       <Route path='/contact' element={<ContactUs/>}/>
       <Route path='/privacy-policy' element={<PrivacyPolicy/>}/>
       <Route path='terms-and-conditions' element={<TermsAndConditions/>}/>
+      <Route path='/recent-construction-works' element={<RecentConstructionWorks/>}/>
     </Routes>
     </div>
      

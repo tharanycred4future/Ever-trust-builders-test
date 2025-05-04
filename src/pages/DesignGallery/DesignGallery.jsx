@@ -4,11 +4,7 @@ import img_2 from '/img_2.jpeg';
 import img_3 from '/img_3.jpeg';
 import img_4 from '/img_4.jpeg';
 import img_5 from '/img_5.jpeg';
-import img_6 from '/contact-header-img.jpg';
-import img_7 from '/header-img.jpg';
-import img_8 from '/footer-bg.jpg';
-import img_9 from '/footer-bg-img.jpg';
-import img_10 from '/footer-bg-alt.jpg';
+
 
 const DesignGallery = () => {
   const images = [
@@ -17,11 +13,7 @@ const DesignGallery = () => {
     { src: img_3, alt: 'img 3', title: '' },
     { src: img_4, alt: 'img 4', title: '' },
     { src: img_5, alt: 'img 5', title: '' },
-    { src: img_6, alt: 'img 6', title: '' },
-    { src: img_7, alt: 'img 7', title: '' },
-    { src: img_8, alt: 'img 8', title: '' },
-    { src: img_9, alt: 'img 9', title: '' },
-    { src: img_10, alt: 'img 10', title: '' },
+ 
   ];
 
   const [selectedImageIndex, setSelectedImageIndex] = useState(null);

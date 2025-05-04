@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import {
   FaPhone,
   FaEnvelope,
@@ -9,9 +9,45 @@ import {
   FaWhatsapp
 } from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6';
+import emailjs from '@emailjs/browser';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+
+
+
+
+
 
 
 const ContactUs = () => {
+  const form = useRef();
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, {
+        publicKey: 'YOUR_PUBLIC_KEY',
+      })
+      .then(
+        () => {
+          toast.success("Message sent successfully!", {
+            position: "top-right",
+            theme: "dark",
+            icon: "✅",
+          });
+          e.target.reset(); // clear form after submit
+        },
+        (error) => {
+          toast.error("Failed to send message. Try again later.", {
+            position: "top-right",
+            theme: "dark",
+            icon: "❌",
+          });
+          console.log('FAILED...', error.text);
+        }
+      );
+  };
   return (
     <>
   
@@ -75,16 +111,16 @@ const ContactUs = () => {
         {/* Send Us A Message - RIGHT */}
         <div className="bg-[#c2b280] shadow-xl p-8 rounded-lg w-full lg:w-1/2 h-full">
           <h3 className="text-2xl font-semibold mb-6">Send Us A Message</h3>
-          <form className="space-y-4">
+          <form className="space-y-4" ref={form} onSubmit={sendEmail}>
             <div className="flex gap-4">
-              <input type="text" placeholder="First Name" className="w-1/2 p-2 border-2 border-[#848058] rounded" />
-              <input type="text" placeholder="Last Name" className="w-1/2 p-2 border-2 border-[#848058] rounded" />
+              <input type="text" name="first_name" placeholder="First Name" className="w-1/2 p-2 border-2 border-[#848058] rounded" />
+              <input type="text" name="last_name" placeholder="Last Name" className="w-1/2 p-2 border-2 border-[#848058] rounded" />
             </div>
-            <input type="email" placeholder="Email" className="w-full p-2 border-2 border-[#848058]  rounded" />
-            <input type="text" placeholder="Phone " className="w-full p-2 border-2 border-[#848058] rounded" />
-            <input type="text" placeholder="Subject" className="w-full p-2 border-2 border-[#848058] rounded" />
-            <textarea rows="5" placeholder="Message" className="w-full p-2 border-2 border-[#848058] rounded" />
-            <button type="submit" className="bg-[#6a2226] text-white px-6 py-2 rounded hover:bg-[#848058] font-semibold cursor-pointer">
+            <input type="email" name="email" placeholder="Email" className="w-full p-2 border-2 border-[#848058]  rounded" />
+            <input type="text" name="phone" placeholder="Phone " className="w-full p-2 border-2 border-[#848058] rounded" />
+            <input type="text" name="subject" placeholder="Subject" className="w-full p-2 border-2 border-[#848058] rounded" />
+            <textarea rows="5" name="message" placeholder="Message" className="w-full p-2 border-2 border-[#848058] rounded" />
+            <button type="submit"  className="bg-[#6a2226] text-white px-6 py-2 rounded hover:bg-[#848058] font-semibold cursor-pointer">
               Send Message
             </button>
           </form>
@@ -94,7 +130,7 @@ const ContactUs = () => {
        {/* Google Map */}
 <div className="mt-10">
   <iframe
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3092.947356146799!2d-90.57134222401891!3d38.6631088718054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87df2f904fe6fdd7%3A0x9c1e202b07c0e2e4!2sChesterfield%2C%20MO!5e0!3m2!1sen!2sus!4v1715790227155!5m2!1sen!2sus"
+    src="https://www.google.com/maps/place/920+Forestlac+Ct,+St.+Louis,+MO+63141,+USA/@38.6758706,-90.5001507,17z/data=!3m1!4b1!4m6!3m5!1s0x87df2ce8822c8f1d:0x49f6e1efe5b6b2d6!8m2!3d38.6758706!4d-90.4975758!16s%2Fg%2F11dznlgnst?entry=ttu&g_ep=EgoyMDI1MDQyNy4xIKXMDSoASAFQAw%3D%3D"
     width="100%"
     height="300"
     allowFullScreen=""
@@ -105,6 +141,7 @@ const ContactUs = () => {
 
       </div>
     </section>
+    <ToastContainer />
     </>
   );
 };

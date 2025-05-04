@@ -5,10 +5,10 @@ const Header = () => {
     <>
       <div className="pt-32 md:pt-40">
         {/* Hero Section */}
-        <section className="relative w-full min-h-[80vh] text-white">
+        <section className="relative w-full min-h-[90vh] text-white">
           {/* Background Image */}
           <img
-            src="/home-header-img.jpeg"
+            src="/home-header-img-alt.jpeg"
             alt="about page bg image"
             className="absolute inset-0 w-full h-full object-cover rounded-b-2xl shadow-lg"
           />
