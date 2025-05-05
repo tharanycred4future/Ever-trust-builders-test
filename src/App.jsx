@@ -4,6 +4,11 @@ import './App.css'
 import Navbar from './components/Navbar/Navbar'
 import Footer from './components/Footer/Footer'
 import BackToTopButton from './components/BackToTopButton/BackToTopButton'
+import Blogs from './components/Blogs/Blogs'
+import BlogOne from './components/BlogOne/BlogOne'
+import BlogTwo from './components/BlogTwo/BlogTwo'
+
+
 
 
 import Home from './pages/Home/Home'
@@ -44,6 +49,9 @@ function App() {
       <Route path='/privacy-policy' element={<PrivacyPolicy/>}/>
       <Route path='terms-and-conditions' element={<TermsAndConditions/>}/>
       <Route path='/recent-construction-works' element={<RecentConstructionWorks/>}/>
+      <Route path='/blogs' element={<Blogs/>}/>
+      <Route path='/how-to-select-the-right-building-materials-for-your-project' element={<BlogOne/>}/>
+      <Route path='/understanding-the-construction-timeline-what-to-expect-and-when' element={<BlogTwo/>}/>
     </Routes>
     </div>
      
