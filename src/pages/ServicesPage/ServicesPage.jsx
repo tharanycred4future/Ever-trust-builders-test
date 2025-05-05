@@ -1,4 +1,33 @@
 import React from 'react'
+import { motion } from 'framer-motion';
+
+
+const servicesHeader = [
+  {
+    title: 'Commercial Construction',
+    description:
+      'As a highly established commercial construction company, EverTrust is capable of executing intricate commercial projects and design/build services. It could be an office complex, retail space, or an industrial site – we provide expandable and personalised solutions that satisfy business requirements with efficiency and perfection.',
+    image: '/img_2.jpeg',
+  },
+  {
+    title: 'Residential Construction',
+    description:
+      'If residential construction companies in St Louis are what you seek, EverTrust is well-equipped to provide. Custom home building, remodeling, and additions are just a few of our areas of expertise, and we have home construction services that reflect your personal style using the best materials and skills.',
+    image: '/img_1.jpeg',
+  },
+  {
+    title: 'Outdoor Construction Services',
+    description:
+      'Our services do not stop at interiors. We offer professional outdoor construction services such as patio construction, deck construction, and landscaping design to beautify your home or business property\'s outdoor space.',
+    image: '/img_5.jpeg',
+  },
+  {
+    title: 'Affordable Construction Services',
+    description:
+      'We know how important it is to stay within budget. That is why we offer affordable construction services without sacrificing quality. Our professionals offer cost-effective solutions based on each client\'s objectives and financial budget.',
+    image: '/img_3.jpeg',
+  },
+];
 
 const summerServices = [
     {
@@ -16,7 +45,7 @@ const summerServices = [
     {
       title: "Roofing Work",
       description:
-        "For an issue to come in with a roof, summer is the best season to be addressed. Our roofing work includes installation, repairs, and maintenance to keep your home or business well covered over the elements. We work with all sorts of roofing materials and long-lasting solutions to make sure your property stays safe and secure.",
+        "EverTrust Construction provides the complete set of roofing services from installation to maintenance and repair. Our expert technicians make sure your roof is in perfect condition to provide safety and protection for your home. Need a minor repair or a total replacement? We provide quality and reliability to keep your home protected from the outside world.",
       image: "/Roofing work -1.png",
     },
     {
@@ -85,27 +114,57 @@ const summerServices = [
 const ServicesPage = () => {
   return (
     <div className='pt-62 md:pt-40' >
-    <div className="relative bg-[url('/header-img.jpg')] bg-cover bg-center h-[100vh]  md:h-[80vh] w-full rounded-lg overflow-hidden">
-        <div className="absolute inset-0 flex items-center justify-center md:justify-start px-4 sm:px-8">
-          <div className="bg-white/80 text-gray-800 rounded-xl shadow-lg w-full sm:w-[90%] md:w-[65%]  p-4 sm:p-6 md:p-8">
-            <h1 className="text-lg sm:text-2xl md:text-3xl font-bold mb-3 text-[#6a2226]">
-              Our Main Construction Services
-            </h1>
-            <h2 className="text-base sm:text-xl md:text-2xl font-semibold text-[#848058] mb-2">
-              Commercial Construction
-            </h2>
-            <p className="text-sm sm:text-base md:text-lg mb-4">
-              With being a highly established commercial construction company, EverTrust is capable to execute intricate commercial projects and design/build services. It could be an office complex, retail space, or an industrial site – we provide expandable and personalized solutions that satisfy business requirements with efficiency and perfection.
-            </p>
-            <h2 className="text-base sm:text-xl md:text-2xl font-semibold text-[#848058] mb-2">
-              Residential Construction
-            </h2>
-            <p className="text-sm sm:text-base md:text-lg">
-              If residential construction companies in St Louis are what you seek, EverTrust is well equipped to provide. Custom home building, remodeling, and additions are just a few of our areas of expertise, and we have home construction services that reflect your personal style using the best materials and skills.
-            </p>
-          </div>
-        </div>
+     {/* Header Background with Title */}
+     <div className="relative bg-[url('/header-img.jpg')] bg-cover bg-center h-[60vh] w-full flex items-center justify-center">
+        <div className="bg-black/50 w-full h-full absolute top-0 left-0" />
+        <h1 className="relative text-white text-3xl md:text-5xl font-bold z-10 text-center">
+          Our Main Construction Services
+        </h1>
       </div>
+
+      {/* Featured Services */}
+      {servicesHeader.map((service, index) => {
+  const isReversed = index % 2 !== 0;
+
+  return (
+    <div
+      key={index}
+      className={`flex flex-col md:flex-row ${
+        isReversed ? 'md:flex-row-reverse' : ''
+      } items-center py-12 px-4 sm:px-8 lg:px-20 gap-8 bg-white`}
+    >
+      <motion.div
+        initial={{ x: isReversed ? 100 : -100, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
+        transition={{ duration: 0.8, ease: 'easeOut' }}
+        viewport={{ once: true }}
+        className="w-full md:w-1/2"
+      >
+        <img
+          src={service.image}
+          alt={service.title}
+          className="rounded-lg shadow-lg w-full h-64 object-cover"
+        />
+      </motion.div>
+
+      <motion.div
+        initial={{ x: isReversed ? -100 : 100, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
+        transition={{ duration: 0.8, ease: 'easeOut' }}
+        viewport={{ once: true }}
+        className="w-full md:w-1/2"
+      >
+        <h2 className="text-2xl md:text-3xl font-bold text-[#6a2226] mb-4">
+          {service.title}
+        </h2>
+        <p className="text-gray-700 text-base md:text-lg">
+          {service.description}
+        </p>
+      </motion.div>
+    </div>
+  );
+})}
+
 
         <section className="px-4 py-10 sm:px-6 lg:px-16 text-black">
   <div className="max-w-7xl mx-auto">
@@ -122,6 +181,8 @@ const ServicesPage = () => {
     </div>
   </div>
 </section>
+
+
         <section className="py-5 px-4 sm:px-6 lg:px-16 bg-white">
       <div className="max-w-7xl mx-auto">
       <div className="mb-6">
