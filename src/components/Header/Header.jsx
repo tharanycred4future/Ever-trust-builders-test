@@ -2,7 +2,8 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { motion } from 'framer-motion';
 import { faHardHat, faHandshake, faCubes, faStar } from '@fortawesome/free-solid-svg-icons';
-
+import SeasonalServices from '../SeasonalServices/SeasonalServices';
+import LocationsInfo from '../LocationsInfo/LocationsInfo';
 const Header = () => {
   return (
     <>
@@ -131,6 +132,12 @@ const Header = () => {
             </div>
           </div>
         </section>
+        <div>
+          <SeasonalServices />
+        </div>
+        <div>
+          <LocationsInfo />
+        </div>
       </div>
     </>
   );
