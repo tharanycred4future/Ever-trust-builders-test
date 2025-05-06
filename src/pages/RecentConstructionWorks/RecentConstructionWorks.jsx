@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { motion } from 'framer-motion';
-import "./recentConstructionWorks.css"; // Import your CSS file for styles
+import "./RecentConstructionWorks.css"; // Import your CSS file for styles
 const constructionWorks = [
     {
       id: 1,
