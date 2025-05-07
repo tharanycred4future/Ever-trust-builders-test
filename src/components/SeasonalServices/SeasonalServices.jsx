@@ -29,7 +29,7 @@ export default function SeasonalConstructionServices() {
     services.map((service, index) => (
       <div
         key={index}
-        className="bg-white rounded-xl shadow p-4 text-gray-700 font-medium border border-gray-200"
+        className="bg-[#f4f0ec] rounded-xl shadow p-4 text-gray-700 font-medium border border-gray-200"
       >
         {service}
       </div>
@@ -46,8 +46,8 @@ export default function SeasonalConstructionServices() {
           onClick={() => toggleSeason("summer")}
           className={`px-6 py-2 rounded-full font-semibold transition ${
             activeSeason === "summer"
-              ? "bg-blue-600 text-white shadow"
-              : "bg-gray-200 text-gray-800 hover:bg-blue-100"
+              ? "bg-[#679267] text-white shadow"
+              : "bg-gray-200 text-gray-800 hover:bg-[#93c572]"
           }`}
         >
           Summer Construction Services
@@ -56,8 +56,8 @@ export default function SeasonalConstructionServices() {
           onClick={() => toggleSeason("winter")}
           className={`px-6 py-2 rounded-full font-semibold transition ${
             activeSeason === "winter"
-              ? "bg-blue-600 text-white shadow"
-              : "bg-gray-200 text-gray-800 hover:bg-blue-100"
+              ? "bg-[#679267] text-white shadow"
+              : "bg-gray-200 text-gray-800 hover:bg-[#93c572]"
           }`}
         >
           Winter Construction Services

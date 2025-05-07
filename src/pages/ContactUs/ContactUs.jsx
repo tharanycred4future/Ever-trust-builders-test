@@ -129,14 +129,16 @@ const ContactUs = () => {
 
        {/* Google Map */}
 <div className="mt-10">
-  <iframe
-    src="https://www.google.com/maps/place/920+Forestlac+Ct,+St.+Louis,+MO+63141,+USA/@38.6758706,-90.5001507,17z/data=!3m1!4b1!4m6!3m5!1s0x87df2ce8822c8f1d:0x49f6e1efe5b6b2d6!8m2!3d38.6758706!4d-90.4975758!16s%2Fg%2F11dznlgnst?entry=ttu&g_ep=EgoyMDI1MDQyNy4xIKXMDSoASAFQAw%3D%3D"
-    width="100%"
-    height="300"
-    allowFullScreen=""
-    loading="lazy"
-    className="w-full rounded shadow"
-  ></iframe>
+<iframe
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3102.343721185722!2d-90.5001507!3d38.6758706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87df2ce8822c8f1d%3A0x49f6e1efe5b6b2d6!2s920%20Forestlac%20Ct%2C%20St.%20Louis%2C%20MO%2063141%2C%20USA!5e0!3m2!1sen!2sus!4v1715086081375!5m2!1sen!2sus"
+  width="100%"
+  height="300"
+  allowFullScreen=""
+  loading="lazy"
+  referrerPolicy="no-referrer-when-downgrade"
+  className="w-full rounded shadow"
+/>
+
 </div>
 
       </div>

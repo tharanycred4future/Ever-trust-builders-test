@@ -107,9 +107,7 @@ const BlogTwo = () => {
       </p>
     </section>
 
-    <footer className="text-center pt-8 border-t mt-12">
-      <p className="text-sm text-gray-500">© {new Date().getFullYear()} Evertrust Builders. All rights reserved.</p>
-    </footer>
+    
   </div>
   );
 };

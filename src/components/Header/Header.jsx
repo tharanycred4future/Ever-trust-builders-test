@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { faHardHat, faHandshake, faCubes, faStar } from '@fortawesome/free-solid-svg-icons';
 import SeasonalServices from '../SeasonalServices/SeasonalServices';
 import LocationsInfo from '../LocationsInfo/LocationsInfo';
+import ExtraServices from '../ExtraServices/ExtraServices';
 const Header = () => {
   return (
     <>
@@ -49,34 +50,41 @@ const Header = () => {
           </div>
         </div>
 
-        {/* About Section */}
-        <div className="mx-auto px-6 sm:px-10 lg:px-20 py-16 text-center flex flex-col items-center justify-center  text-lg bg-[#F4F1E6] w-full h-[35vw]">
-          <p className="text-sm font-semibold uppercase tracking-wider text-gray-700 mb-4">
-            About EverTrust
-          </p>
-          <div className='max-w-5xl'>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-justify text-gray-900 leading-tight mb-6">
-              Residential & Commercial Construction Company in St Louis, Missouri
-            </h2>
-            <p className="text-base sm:text-lg text-justify text-gray-800 mb-4">
-              With over 32 years of experience and over 100 projects successfully delivered,
-              EverTrust is a prominent name among construction companies in St Louis.
-              We are not just famous for creating impeccable buildings, but also for creating lasting relationships with our clients.
-            </p>
-            <p className="text-base sm:text-lg text-justify text-gray-800">
-              As a full-service construction company in Missouri, we believe that every project is unique.
-              We engage hand-in-hand with our customers, from the consultation stage to project delivery,
-              to achieve their dream, without sacrificing timelines, budget, and high quality.
-            </p>
-            <p className="text-sm sm:text-base text-justify md:text-lg mt-2">
-              EverTrust, being one of the most reliable construction companies in Saint Louis MO,
-              has seen over 100 successful projects on the premise of customer satisfaction,
-              reliability, and quality built on a reputation. From the ground up to finish the build,
-              we commit each project to on-time completion in budget and the best
-              specifications—rendering us a high-end option for local construction companies closest to you.
-            </p>
-          </div>
-        </div>
+        <div className="px-6 sm:px-10 lg:px-20 py-16 bg-[#F4F1E6] w-full h-[50vw]">
+  <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center h-full">
+    
+    {/* LEFT SIDE - Heading */}
+    <div className="text-left flex flex-col justify-center h-full">
+      <p className="text-sm font-semibold uppercase tracking-wider text-gray-700 mb-4">
+        About EverTrust
+      </p>
+      <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-gray-900 leading-tight">
+        Residential & Commercial Construction Company in St Louis, Missouri
+      </h2>
+    </div>
+
+    {/* RIGHT SIDE - Content */}
+    <div className="text-justify flex flex-col justify-center h-full gap-10 space-y-4 text-base sm:text-lg text-gray-800">
+      <p>
+        With over 32 years of experience and over 100 projects successfully delivered,
+        EverTrust is a prominent name among construction companies in St Louis.
+        We are not just famous for creating impeccable buildings, but also for creating lasting relationships with our clients.
+      </p>
+      <p>
+        As a full-service construction company in Missouri, we believe that every project is unique.
+        We engage hand-in-hand with our customers, from the consultation stage to project delivery,
+        to achieve their dream, without sacrificing timelines, budget, and high quality.
+      </p>
+      <p className="text-sm sm:text-base md:text-lg">
+        EverTrust, being one of the most reliable construction companies in Saint Louis MO,
+        has seen over 100 successful projects on the premise of customer satisfaction,
+        reliability, and quality built on a reputation. From the ground up to finish the build,
+        we commit each project to on-time completion in budget and the best
+        specifications—rendering us a high-end option for local construction companies closest to you.
+      </p>
+    </div>
+  </div>
+</div>
 
 
 
@@ -134,6 +142,9 @@ const Header = () => {
         </section>
         <div>
           <SeasonalServices />
+        </div>
+        <div>
+          <ExtraServices />
         </div>
         <div>
           <LocationsInfo />
